@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="blst — broadcast">
+  <!-- Broadcast: dot + concentric arcs -->
+  <g fill="none" stroke-linecap="round" stroke-width="4">
+    <path d="M 23 41 A 13 13 0 0 1 23 23" stroke="#FF7849"/>
+    <path d="M 41 23 A 13 13 0 0 1 41 41" stroke="#FF7849"/>
+    <path d="M 17 47 A 21 21 0 0 1 17 17" stroke="#FF7849" stroke-opacity="0.55"/>
+    <path d="M 47 17 A 21 21 0 0 1 47 47" stroke="#FF7849" stroke-opacity="0.55"/>
+  </g>
+  <circle cx="32" cy="32" r="5" fill="#FFB347"/>
+</svg>
