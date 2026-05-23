@@ -569,10 +569,23 @@ export default function Index() {
                 </div>
               </div>
               <div className="self-center pt-4 text-muted-foreground/30 text-sm">→</div>
-              <div className="flex flex-col gap-1.5 self-center pt-5">
-                <span className="font-mono text-[10px] text-primary/60 border border-primary/20 px-2 py-0.5">
-                  {selectedKinds.length ? selectedKinds.map(k => `k${k}`).join(' ') : 'no kinds'}
-                </span>
+              <div className="flex flex-col gap-1.5">
+                <span className="text-muted-foreground/50 text-[9px] uppercase tracking-widest">kinds</span>
+                <div className="flex flex-col gap-0.5">
+                  {selectedKinds.length > 0 ? (
+                    selectedKinds.map(k => {
+                      const label = KIND_OPTIONS.find(o => o.kind === k)?.label ?? '';
+                      return (
+                        <div key={k} className="flex items-center gap-1.5 border border-primary/20 px-2 py-0.5" title={`kind ${k}${label ? ` · ${label}` : ''}`}>
+                          <span className="text-primary/80 tabular-nums">k{k}</span>
+                          {label && <span className="text-muted-foreground/60">{label}</span>}
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <div className="flex items-center gap-1.5 border border-border px-2 py-0.5 text-muted-foreground/40">no kinds</div>
+                  )}
+                </div>
               </div>
               <div className="self-center pt-4 text-muted-foreground/30 text-sm">→</div>
               <div className="flex flex-col gap-1.5">
