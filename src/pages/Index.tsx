@@ -268,12 +268,15 @@ const DEFAULT_SOURCES = [
 ];
 
 const KIND_OPTIONS: { kind: number; label: string }[] = [
-  { kind: 0,    label: 'Profiles' },
-  { kind: 1,    label: 'Notes' },
-  { kind: 3,    label: 'Follows' },
-  { kind: 6,    label: 'Reposts' },
-  { kind: 7,    label: 'Reactions' },
-  { kind: 1063, label: 'Files' },
+  { kind: 0,     label: 'Profiles' },
+  { kind: 1,     label: 'Notes' },
+  { kind: 3,     label: 'Follows' },
+  { kind: 5,     label: 'Deletions' },
+  { kind: 6,     label: 'Reposts' },
+  { kind: 7,     label: 'Reactions' },
+  { kind: 1063,  label: 'Files' },
+  { kind: 31237, label: 'Releases' },
+  { kind: 31238, label: 'Labels' },
 ];
 
 const DEFAULT_KINDS = [0, 1, 3, 7];
